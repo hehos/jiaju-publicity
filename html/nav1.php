@@ -5,6 +5,11 @@
     <title></title>
     <link rel="stylesheet" href="../css/my.css"/>
     <link rel="stylesheet" href="../css/media-firmlist.css"/>
+
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script>
+        var jq = jQuery.noConflict();
+    </script>
 </head>
 <body class="publicity">
 <?php include "header.php" ?>
@@ -47,6 +52,9 @@
 
     <div class="case-and-new">
         <div class="before-case">
+            <div class="title">
+                <h2>过往验房案例</h2>
+            </div>
             <div class="media-firmitem">
                 <div class="media-left">
                     <a href="" class="thumbnail"><img src="../img/img1.png" alt=""/></a>
@@ -78,47 +86,124 @@
                 </div>
             </div>
         </div>
+
+<!--        <div class="new-yanfang">-->
+<!--            <h2 class="title">最新申请验房</h2>-->
+<!--            <table class="publicity-table">-->
+<!--                <thead>-->
+<!--                    <tr>-->
+<!--                        <th>业主</th>-->
+<!--                        <th>电话</th>-->
+<!--                        <th>楼盘</th>-->
+<!--                        <th>申请时间</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                    <tr>-->
+<!--                        <td>谢先生</td><td>181********</td><td>市政大院</td><td>1分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>谢先生</td><td>181********</td><td>市政大院</td><td>1分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>-->
+<!--                    </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--        </div>-->
+
         <div class="new-yanfang">
-            <table class="publicity-table">
-                <thead>
+            <div>
+                <div class="title">
+                    <h2>最新申请验房</h2>
+                </div>
+                <table class="publicity-table">
                     <tr>
                         <th>业主</th>
                         <th>电话</th>
                         <th>楼盘</th>
                         <th>申请时间</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>谢先生</td><td>181********</td><td>市政大院</td><td>1分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>谢先生</td><td>181********</td><td>市政大院</td><td>1分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                    <tr>
-                        <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
-                    </tr>
-                </tbody>
-            </table>
+                </table>
+                <div id="scrolldiv" style="overflow: hidden;height: 310px;position:relative;">
+                    <div id="scrolldiv1">
+                        <table class="publicity-table">
+                            <tr>
+                                <td>谢先生</td><td>181********</td><td>市政大院</td><td>1分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>谢先生</td><td>181********</td><td>市政大院</td><td>1分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                            <tr>
+                                <td>王先生</td><td>182********</td><td>山水蓉城</td><td>2分钟前</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="scrolldiv2"></div>
+                </div>
+            </div>
         </div>
+
+        <script src="../js/sjbj_index.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            freeDesign.init();
+        </script>
+
     </div>
 
     <img src="../img/1-6ge-issue.png" alt=""/>

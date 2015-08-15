@@ -161,6 +161,9 @@
 .new-apply .type-tabs .tab + .tab {
   border-left: 1px solid #ddd;
 }
+.case-and-new {
+  padding-bottom: 50px;
+}
 .case-and-new:before,
 .case-and-new:after {
   content: "";
@@ -168,6 +171,15 @@
 }
 .case-and-new:after {
   clear: both;
+}
+.case-and-new .before-case .title,
+.case-and-new .new-yanfang .title {
+  font-size: 24px;
+  padding: 20px 0;
+}
+.case-and-new .before-case .title h2,
+.case-and-new .new-yanfang .title h2 {
+  margin: 0;
 }
 .case-and-new .before-case {
   float: left;
