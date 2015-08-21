@@ -1,0 +1,41 @@
+.publicity {
+  background-color: #ffffff;
+}
+.publicity .topBgcontainer,
+.publicity .container,
+.publicity #footerA {
+  width: 1190px;
+}
+.publicity img {
+  max-width: 100%;
+}
+.publicity .media-body,
+.publicity .media-left,
+.publicity .media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+.publicity .media-body {
+  width: 10000px;
+}
+.publicity .media-left img {
+  max-width: none;
+}
+.publicity .media-firmitem .media-left {
+  padding-right: 15px;
+}
+.publicity-table th,
+.publicity-table td {
+  text-align: left;
+}
+.publicity-table th {
+  border: 1px solid #dddddd;
+  border-width: 1px 0;
+  line-height: 42px;
+}
+.publicity-table td {
+  line-height: 32px;
+}
+.new-yanfang tbody {
+  padding-top: 20px;
+}
