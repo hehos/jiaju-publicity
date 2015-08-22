@@ -10,7 +10,7 @@
         var jq = jQuery.noConflict();
     </script>
 </head>
-<body class="publicity  ">
+<body class="publicity">
 <?php include "header.php" ?>
 
 <div class="container">

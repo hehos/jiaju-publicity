@@ -1,5 +1,6 @@
 .publicity {
   * { box-sizing: border-box; }
+  a { color: inherit; }
   background-color: #ffffff;
   .topBgcontainer, .container, #footerA {
     width: 1190px;
@@ -83,8 +84,8 @@
       padding: 0 6px;
       margin: 19px 0;
     }
+    input, button, select { height: 30px; }
     button { cursor: pointer; }
-    option { line-height: 25px; }
     [type=submit] {
       line-height: 40px;
       background-color: #f25619;
@@ -129,6 +130,9 @@
       }
     }
   }
+  .publicity-table {
+    tr { border-bottom: 1px solid #eee; }
+  }
 }
 
 .case-and-new {
@@ -154,6 +158,7 @@
 }
 
 .publicity-table {
+  color: #666;
   th, td { text-align: left;
     &:last-child {
       text-align: right;
@@ -166,6 +171,7 @@
   }
   td {
     line-height: 32px;
+    white-space: nowrap;
   }
 }
 .new-yanfang {

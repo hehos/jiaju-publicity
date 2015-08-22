@@ -4,6 +4,9 @@
 .publicity * {
   box-sizing: border-box;
 }
+.publicity a {
+  color: inherit;
+}
 .publicity .topBgcontainer,
 .publicity .container,
 .publicity #footerA {
@@ -108,11 +111,13 @@
   padding: 0 6px;
   margin: 19px 0;
 }
+.head-form .form-cont input,
+.head-form .form-cont button,
+.head-form .form-cont select {
+  height: 30px;
+}
 .head-form .form-cont button {
   cursor: pointer;
-}
-.head-form .form-cont option {
-  line-height: 25px;
 }
 .head-form .form-cont [type=submit] {
   line-height: 40px;
@@ -161,6 +166,9 @@
 .new-apply .type-tabs .tab + .tab {
   border-left: 1px solid #ddd;
 }
+.new-apply .publicity-table tr {
+  border-bottom: 1px solid #eee;
+}
 .case-and-new {
   padding-bottom: 50px;
 }
@@ -190,6 +198,9 @@
   float: right;
   width: 33.3%;
 }
+.publicity-table {
+  color: #666;
+}
 .publicity-table th,
 .publicity-table td {
   text-align: left;
@@ -205,6 +216,7 @@
 }
 .publicity-table td {
   line-height: 32px;
+  white-space: nowrap;
 }
 .new-yanfang tbody {
   padding-top: 20px;
